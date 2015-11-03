@@ -7,7 +7,6 @@ var WebpackParser = (function () {
         var assets = Object.keys(compilationStats.compilation.assets);
         var extensions = {};
         for (var i = 0; i < assets.length; ++i) {
-            console.log(FileUtils_1.default.GetFileExtension(assets[i]));
             var ext = FileUtils_1.default.GetFileExtension(assets[i]);
             if (typeof (ext) === "string") {
                 if (extensions[ext] === undefined) {
