@@ -32,8 +32,7 @@ plugins: [
 From there you can do so in the templates
 
 ```
-{% for (var i = 0; i < js.length; ++i) { %}
-    <script type="text/javascript" src="{% js[i] %}"></script>
+{% for (var i = 0; i < o.js.length; ++i) { %}
+  <script type="text/javascript" src="{%= o.js[i] %}"></script>
 {% } %}
 ```
-
