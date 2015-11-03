@@ -13,8 +13,9 @@ With Cortex-Webpack-Html-Generator you can generate a new index.html with the go
 1. Configure your webpack to use the plugin
 
 ```
-plugins: [
+var HtmlPlugin = require('cortex-webpack-html-generator');
 
+plugins: [
   new HtmlPlugin({
     template: 'assets/index.html.tmpl',
     output_filename: 'index.html'
