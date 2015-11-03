@@ -10,7 +10,7 @@ CortexWebpackHtmlGenerator.prototype.apply = function(compiler) {
   compiler.plugin('emit', function(compilation, compileCallback) {
     var inputFilename = this.options.template || "assets/index.html.tmpl";
     var outputFilename = this.options.output_filename || "index.html";
-    self.emitHtml(compilation, inputFilename);
+    self.emitHtml(compilation, inputFilename, outputFilename);
     compileCallback();
   });
 };
