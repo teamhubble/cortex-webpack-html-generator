@@ -7,7 +7,6 @@ export default class WebpackParser{
     var extensions = {};
 
     for (var i = 0; i < assets.length; ++i) {
-      console.log(FileUtils.GetFileExtension(assets[i]));
       var ext = FileUtils.GetFileExtension(assets[i]);
       if (typeof(ext) === "string") {
         if (extensions[ext] === undefined) {
