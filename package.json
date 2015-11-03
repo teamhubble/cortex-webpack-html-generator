@@ -1,0 +1,27 @@
+{
+  "name": "cortex-webpack-html-generator",
+  "version": "0.0.1",
+  "description": "Webpack loader to generate Index.html with hashed js output",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc"
+  },
+  "keywords": [
+    "typescript",
+    "webpack",
+    "lib",
+    "index.html",
+    "app bundle"
+  ],
+  "author": "Mathieu Rheaume <mrheaume@cortex.bz>",
+  "license": "GPL-3.0",
+  "devDependencies": {
+    "colors": "^1.1.2",
+    "concat-files": "^0.1.0",
+    "tsd": "^0.6.5",
+    "typescript": "^1.8.0-dev.20151103"
+  },
+  "dependencies": {
+    "blueimp-tmpl": "^2.5.5"
+ }
+}
