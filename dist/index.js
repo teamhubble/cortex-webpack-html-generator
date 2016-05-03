@@ -1,3 +1,4 @@
+"use strict";
 var fs = require("fs");
 var FileUtils_1 = require('./FileUtils');
 var WebpackParser_1 = require('./WebpackParser');
@@ -7,8 +8,8 @@ function CortexWebpackHtmlGenerator(options) {
 CortexWebpackHtmlGenerator.prototype.apply = function (compiler) {
     var self = this;
     compiler.plugin('emit', function (compilation, compileCallback) {
-        var inputFilename = this.options.template || "assets/index.html.tmpl";
-        var outputFilename = this.options.output_filename || "index.html";
+        var inputFilename = self.options.template || "assets/index.html.tmpl";
+        var outputFilename = self.options.output_filename || "index.html";
         self.emitHtml(compilation, inputFilename, outputFilename);
         compileCallback();
     });

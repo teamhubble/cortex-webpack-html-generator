@@ -1,3 +1,4 @@
+"use strict";
 var fs = require("fs");
 var FileUtils_1 = require('./FileUtils');
 var WebpackParser = (function () {
@@ -18,6 +19,6 @@ var WebpackParser = (function () {
         return extensions;
     };
     return WebpackParser;
-})();
+}());
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.default = WebpackParser;

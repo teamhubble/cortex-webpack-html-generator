@@ -9,7 +9,6 @@
   "files": [
     "./typings/node/node.d.ts",
     "./typings/typescript/typescript.d.ts",
-    "./typings/es6-promise/es6-promise.d.ts",
     "./lib/index.ts"
   ]
 }

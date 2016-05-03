@@ -1,3 +1,4 @@
+"use strict";
 var fs = require('fs');
 var URL = require('url');
 var path = require('path');
@@ -18,6 +19,6 @@ var FileUtils = (function () {
         }
     };
     return FileUtils;
-})();
+}());
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.default = FileUtils;

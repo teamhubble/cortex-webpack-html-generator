@@ -1,6 +1,6 @@
 {
   "name": "cortex-webpack-html-generator",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Webpack loader to generate Index.html with hashed js output",
   "main": "dist/index.js",
   "scripts": {
